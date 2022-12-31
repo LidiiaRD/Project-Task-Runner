@@ -1,0 +1,197 @@
+/* Variable */
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+$color-main: #636e72;
+$font-text:'Dancing Script', cursive;
+$font-header: 'Mulish', sans-serif;
+
+
+
+section {
+padding: 50px 0;
+}
+
+/* Splash */ 
+.box li {
+display: inline-block;
+margin: 0 30px 0 0;
+}
+.box li a {
+color: #f5f6fa;
+font-size: 22px;
+font-family: $font-header;
+}  
+.box p {
+color: #fbc531;
+font-size: 42px;
+font-family: $font-text;
+}    
+.box-container1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; 
+padding: 40px 0;
+}
+.box {
+flex: 0 0 50%;
+text-align: center;
+display: flex;  
+} 
+.splash-inner {
+position: absolute;
+width: 100%; 
+text-align: center;
+margin: 50px;
+color: #f5f6fa;   
+}
+.splash-inner .page-subtitle {
+font-size: 86px;
+font-family: $font-header;
+}
+.splash-inner .page-itle {
+font-size: 42px;
+font-family: $font-text;
+}    
+.splash {
+height: 100vh;   
+position: relative;
+background-image: url('https://i.postimg.cc/gcgsxY8Z/pexels-rachel-claire-5864277-1.jpg');
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+}
+.btn {
+display: inline-block;
+min-width: 160px;
+margin: 24px auto 0 auto;
+padding: 16px;
+font-family: $font-header;
+font-size: 18px;
+text-align: center;
+border-style: solid;
+background-color: #fbc531;
+}
+
+/* Services */
+.services {
+background-color: #f7f1e3;
+}     
+.section-title {
+font-size: 52px;
+font-family: $font-header;
+text-align: center;
+} 
+.section-subtitle {
+font-size: 36px;
+font-family: $font-text;
+text-align: center;
+} 
+.box-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.box {   
+flex: 0 0 22%; 
+position: relative;
+text-align: center;
+} 
+.box-title {
+font-size: 22px;
+font-family: $font-header;
+} 
+.text {
+font-size: 20px;
+font-family: $font-text;
+} 
+.icon i {
+font-size: 25px;   
+background: #fbc531;
+width: 60px;
+height: 60px;
+line-height: 60px;
+color: #fff;
+border-radius: 50%;
+}
+
+/* Portfolio */
+.portfolio {
+background-color: #f1f2f6;
+}    
+.card-text {
+font-size: 30px;
+font-family: $font-text;
+text-align: center;
+}    
+.card-title {
+font-size: 22px;
+font-family: $font-header;
+text-align: center;
+}
+
+/* Footer */
+.footer {
+background-color: #f7f1e3;
+}    
+.nav li {
+font-size: 25px;   
+background: #fbc531;
+width: 60px;
+height: 60px;
+line-height: 60px;
+color: #fff;
+border-radius: 50%;
+margin: 0 10px 0 0;
+} 
+
+/* Media */
+@media (max-width: 768px) {
+
+.splash {
+flex-direction: column;   
+}        
+.splash-inner {
+flex-direction: column;
+width: 83%;
+}       
+.boxes {
+flex-direction: column;
+}
+.box-container {
+flex-direction: column;
+}
+.box-container1 {
+flex-direction: column;
+}
+.box li a {
+font-size: 18px;   
+}
+.box li {
+margin: 0 15px 0 0;
+}
+.box p {    
+font-size: 38px;    
+}    
+.splash-inner .page-subtitle {
+font-size: 38px;    
+}    
+.splash-inner .page-title {
+font-size: 24px;
+}
+.section-title {
+font-size: 40px;
+}
+.section-subtitle {
+font-size: 24px;
+}
+.icon i {
+font-size: 20px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+}    
+}
